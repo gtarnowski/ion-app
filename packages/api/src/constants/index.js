@@ -1,0 +1,29 @@
+export {
+  ERR_ACCESS_DENIED,
+  ERR_ACCESS_DENIED_ROLE,
+  ERR_CATEGORY_NOT_FOUND,
+  ERR_INVALID_USER,
+  ERR_MAX_CATEGORY_LIMIT,
+  ERR_MISSING_CATEGORY_ID,
+  ERR_MISSING_SUBCATEGORY_ID,
+  ERR_MISSING_USER_ID,
+  ERR_NON_UNIQ_NAME,
+  ERR_SUBCATEGORY_NOT_FOUND,
+  ERR_USER_EXISTS,
+  ERROR_MESSAGES,
+  MONGO_ERRORS,
+} from './errorMessages'
+
+
+
+export const COLLECTIONS = {
+  USERS: 'Users',
+  CATEGORIES: 'Categories',
+  SUBCATEGORIES: 'Subcategories',
+};
+
+export const ROLES = {
+  ADMIN: 'admin',
+  SHOP_ADMIN: 'shopAdmin',
+  USER: 'user',
+};

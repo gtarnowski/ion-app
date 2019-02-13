@@ -1,0 +1,106 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Mutation {
+    signIn(username: String! password: String!): SignInResponse
+    createUser(username: String! password: String!): SignInResponse
+    createCategory(name: String!): CategoryResponse
+    createSubCategory(categoryId: ID!, name: String!): SubcategoryResponse
+}
+
+type Query {
+    user: User
+    category (
+        categoryId: ID
+    ):SingleCategory
+}
+
+enum Roles {
+    admin
+    shopAdmin
+    user
+}
+
+type SingleCategory {
+    category: Category
+}
+
+type UpdateDetails {
+    updatedAt: String
+    updatedBy: ID
+}
+
+type CreateDetails {
+    createdAt: String
+    createdBy: String
+}
+
+type User {
+    _id: ID!
+    username: String!
+    firstName: String!
+    lastName: String!
+    email: String!
+    fullName: String
+    role: Roles
+    updated: UpdateDetails
+    created: CreateDetails
+}
+
+type Category {
+    _id: ID!
+    name: String!
+    subCategoriesCount: Int!
+    url: String!
+    updated: UpdateDetails
+    created: CreateDetails
+}
+
+type Subcategory {
+    _id: ID!
+    name: String!
+    updated: UpdateDetails
+    created: CreateDetails
+}
+
+type CategoryResponse {
+    result: SimpleResponse
+    category: Category
+}
+
+type SubcategoryResponse {
+    result: SimpleResponse
+    subCategory: Subcategory
+}
+
+type SignUpResponse {
+    errors: SignUpErrors
+    result: SimpleResponse!
+    token: String
+}
+
+
+type SimpleResponseReason {
+    code: String
+    message: String
+}
+type SimpleResponse {
+    success: Boolean!
+    reason: SimpleResponseReason
+}
+type SignInResponse {
+    result: SimpleResponse!
+    token: String
+}
+type SignUpErrors {
+    email: String
+    password: String
+    passwordConfirmation: String
+    phone: String
+    firstName: String
+    lastName: String
+    title: String
+    companyName: String
+}
