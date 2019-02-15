@@ -1,15 +1,12 @@
-import React from 'react'
-import {storiesOf} from '@storybook/react' // eslint-disable-line import/no-extraneous-dependencies
-import Navigation from './index'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import {muiTheme} from 'storybook-addon-material-ui';
+import Navigation from './index';
+import { theme } from '../theme'
 
 
 storiesOf('Navigation', module)
-    .add('default', () => (
-        <Navigation />
-    ))
-    .add('with title', () => (
-        <Navigation title="ion-shop" />
-    ))
-    .add('with fav and cart label', () => (
-        <Navigation cartItemsCount={2} favouritesItemsCount={3}/>
-    ))
+  .addDecorator(muiTheme(theme))
+  .add('default', () => <Navigation />)
+  .add('with title', () => <Navigation title="ion-shop" />)
+  .add('with fav and cart label', () => <Navigation cartItemsCount={2} favouritesItemsCount={3} />);

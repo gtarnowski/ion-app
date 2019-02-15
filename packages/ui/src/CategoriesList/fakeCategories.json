@@ -1,0 +1,99 @@
+[
+  {
+    "id": "11",
+    "name": "Cranes",
+    "url": "/1/11/construction-equipment/cranes",
+    "count": 3,
+    "children": [
+      {
+        "id": "105",
+        "name": "Boom Crane Trucks",
+        "url": "/1/11/105/construction-equipment/cranes/boom-crane-trucks",
+        "count": 2,
+        "__typename": "Category"
+      },
+      {
+        "id": "111",
+        "name": "Rough Terrain Cranes",
+        "url": "/1/11/111/construction-equipment/cranes/rough-terrain-cranes",
+        "count": 1,
+        "__typename": "Category"
+      }
+    ],
+    "__typename": "Category"
+  },
+  {
+    "id": "231",
+    "name": "Super Cranes",
+    "children": []
+  },
+  {
+    "id": "10",
+    "name": "Earth Moving Equipment",
+    "url": "/1/10/construction-equipment/earth-moving-equipment",
+    "count": 8,
+    "children": [
+      {
+        "id": "89",
+        "name": "Bulldozers (Crawler)",
+        "url": "/1/10/89/construction-equipment/earth-moving-equipment/bulldozers-crawler",
+        "count": 2,
+        "__typename": "Category"
+      },
+      {
+        "id": "92",
+        "name": "Crawler Loaders",
+        "url": "/1/10/92/construction-equipment/earth-moving-equipment/crawler-loaders",
+        "count": 1,
+        "__typename": "Category"
+      },
+      {
+        "id": "93",
+        "name": "Excavators (Crawler)",
+        "url": "/1/10/93/construction-equipment/earth-moving-equipment/excavators-crawler",
+        "count": 4,
+        "__typename": "Category"
+      },
+      {
+        "id": "96",
+        "name": "Loader Backhoes",
+        "url": "/1/10/96/construction-equipment/earth-moving-equipment/loader-backhoes",
+        "count": 1,
+        "__typename": "Category"
+      }
+    ],
+    "__typename": "Category"
+  },
+  {
+    "id": "18",
+    "name": "Paving & Asphalt",
+    "url": "/1/18/construction-equipment/paving-asphalt",
+    "count": 5,
+    "children": [
+      {
+        "id": "117",
+        "name": "Asphalt & Concrete Equipment",
+        "url": "/1/18/117/construction-equipment/paving-asphalt/asphalt-concrete-equipment",
+        "count": 5,
+        "__typename": "Category"
+      }
+    ],
+    "__typename": "Category"
+  },
+  {
+    "id": "329",
+    "name": "Sweepers & Cleaners",
+    "url": "/1/329/construction-equipment/sweepers-cleaners",
+    "count": 1,
+    "children": [
+      {
+        "id": "19",
+        "name": "Sweepers",
+        "url": "/1/329/19/construction-equipment/sweepers-cleaners/sweepers",
+        "count": 1,
+        "__typename": "Category"
+      }
+    ],
+    "__typename": "Category"
+  }
+]

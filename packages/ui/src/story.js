@@ -1,7 +1,10 @@
-import React from 'react'
-import { storiesOf, addDecorator } from '@storybook/react';
-import theme from './theme'
-import 'reset-css'
-import './theme.css'
+import React from 'react';
+import { addDecorator } from '@storybook/react';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 
-addDecorator(theme)
+import { theme } from './theme';
+import './theme.css';
+import 'reset-css';
+
+const Provider = storyFn => <MuiThemeProvider theme={theme}>{storyFn()}</MuiThemeProvider>;
+addDecorator(Provider);
